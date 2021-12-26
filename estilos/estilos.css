@@ -10,29 +10,8 @@ header{
     justify-content: space-between;
     margin: 0 auto;
     background: rgb(164,232,212);
-    background: linear-gradient(90deg, rgba(164,232,212,1) 21%, rgba(43,145,112,1) 52%, rgba(22,92,97,1) 88%);
+    background: linear-gradient(90deg, rgba(164,232,212,1) 21%, rgba(43,145,112,1) 52%, rgba(22,92,97,1) 88%)
 }
-.button{
- font-size: 1rem;
-    width: 20rem;
-    margin: 1rem;    
-    padding: 1rem;     
-    font-weight: bolder;  
-    border: solid rgb(9, 109, 84);;     
-    background-color: rgb(118, 211, 188); 
-    border-radius: 20px; 
-    
-                                                          
-  
-}
-.Buscar {
-    height: 2rem;
-    width: 5rem;
-    background-color:rgb(9, 109, 84) ;
-    border-radius: 20px;
-
-}
-  
 
 .icons{
     margin: 10px;
@@ -55,28 +34,23 @@ header{
     background: linear-gradient(90deg, rgba(34,103,105,1) 16%, rgba(8,204,195,1) 98%);
     margin: 0;
     width: 100%
-    
-   
-}
-.nav-link{
-    color:papayawhip ;
 }
 ul li{
     display: inline-block;
-    text-align: center;
+    text-align:justify;
 }
 ul li a{
     text-decoration: none;
     display: inline-block;
     font-family:'Questrial', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.625rem;
     padding: 50px;
     font-weight: bolder;
    
     
 }
 ul li a:hover {
-    background-color: black;
+    background-color: rgb(102, 209, 182);
     border-radius:20px ;
 }
 main{
@@ -92,46 +66,36 @@ h2{
     line-height: 80px;
 
 }
+.card-group{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .nosotros {
    float: right;
-   padding: 10px;
-   padding-right: 100px;
-  
+   padding: 20px;
+   padding-right: 50px;
+   width: 20px;  
 }
-.parrafo1{
-    padding-left: 80px;
-    padding: 20px;
-    background:#49c39b ;
-    width: 50%;
-    font-size: 16px;
-    font-family: 'Manjari', sans-serif;
-    display: inline-block;
-}
-
-.parrafo1:hover {
-    transform: scale(1.5,1) ;
-}
-
-.compras {
-    float: left;
-    padding: 20px;
     
-   
+.parrafo1{
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Manjari', sans-serif;
+    display:flex;
+    justify-content: center;
+    text-justify: distribute;
 }
-.parrafo2 {
-        padding: 20px;
-        background:#49c39b ;
-        width: 60%;
-        text-align: right;
-        font-size: 16px;
-        font-family: 'Manjari', sans-serif;
-        display: inline-block; 
+h3{
+   font-size: 28px;
+
 }
-   
-.parrafo2:hover {
-    transform: scale(1.5,1) ;
-}  
+h3:hover {
+    transform: scale(1.5,1.5) ;
+    transition: all 0,5s;
+}
 
 footer{
     background: rgb(34,103,105);
@@ -145,14 +109,12 @@ footer{
 h4{
     font-family:'Questrial', sans-serif;
     font-size: 18px;
-    color: papayawhip;
-    
+    color: papayawhip;  
 }
     
 .pagos{
     justify-content: flex-start;
-    display: inline;
-    
+    display: inline;  
 }
 /*Menu de registro*/
 a{
@@ -162,59 +124,64 @@ a{
     padding: 10px;
     display: inline-flex;
     font-weight: bolder;
-
 }
 .formulario{
     padding: 10px;
     font-family:'Questrial', sans-serif; 
     background-color:rgb(67, 187, 157);
     color:rgb(17, 83, 85);
-    font-weight: bolder;
-    
+    font-weight: bolder;   
 }
 /*menu gafas de sol*/
+.galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    gap: 200px;
+    padding: 20px;
+    grid-auto-flow: row dense;
+    object-fit: cover;
+}
 
-.galery{
+.button{
+    font-size: 8px;
+    width: 100px;
+    margin: 8px;    
+    padding:8px;                                                     
+}
+.Buscar {
+    height: 25px;
+    width: 50px;
+}
+
+.estilo{ 
     width: 100%;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content:center;
+    align-items: center;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-.estilo{
-    font-family: 'Manjari',sans-serif;
-    width: 30%;
-    display: flex;
-    max-width: 1100px;
-    text-decoration:none;
-    color: rgb(9, 109, 84);
-  
-}
-
-
 .estilo a:hover {
     text-decoration: underline;
 }
 .estilo .img-container {
     overflow: hidden;
-    height: 400px;
+    height: 350px;
     position: relative;
     border-radius: 15px;
     display:inline-flex;
 }
 .estilo .img-container img {
     width: 100%;
-   display: inline-block;
-     top: -25%;
+    display: inline-block;
+    top: -25%;
     transition: all 0,5s;
-
 }
 .estilo:hover .img-container{
     transform: scale(1.2);
-}
+}     
 
 .estilo .add-cart{
     display: inline-block;
@@ -226,6 +193,7 @@ a{
     border: 1px solid rgb(19, 236, 171);
     border-radius: 25px;
 }
+
 p{
     font-family: sans-serif;
     font-weight: bolder;
@@ -244,7 +212,15 @@ h2{
 h1{
     font-family:'Manjari',sans-serif;
     font-weight: bolder;
+    color: papayawhip;
 }
 h5 {
     color: aquamarine;
+} 
+
+  @media only screen and (max-width:768px) {
+    .header{
+     padding-top: 20px;
+     display: flex;
+    }
 }
